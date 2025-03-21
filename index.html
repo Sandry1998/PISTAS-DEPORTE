@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PISTAS DEPORTIVAS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./1000_F_8272595_JT0ThDW32FSoKxPJQJcceBHgdz6yIWcR.png" type="image/png">
+</head>
+<body>
+    <header>
+            <section>
+                <img src="./11.44-x-9.38m-Compact-Basketball-Half-Court-Night--1024x682.png" alt="Logo">
+                <h1>RESERVAS DE PISTAS</h1>
+            </section>
+            <main>
+            <div class="nombre">
+              <legend>INFORMACION PERSONAL</legend>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>  
+            <div class="Apellidos">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="DNI">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+            <div class="Telefono">
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+            </div>
+            <div class="Email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="Tarjeta Credito">
+                <h4>PAGO CON TARJETA</h4>
+            <form action="#" method="post">
+                <label for="card-name">Propietario de la tarjeta</label>
+                <input type="text" id="card-name" name="card-name" required>
+                <label for="card-number">Numero de tarjeta</label>
+                <input type="text" id="card-number" name="card-number" maxlength="12" placeholder="1234 2345 5678" required>
+                <div class="card-expiration">
+                    <label for="card-expiration">Fecha de caducidad</label>
+                    <input type="text" id="card-expiration" name="card-expiration" maxlength="5" placeholder="MM/AA" required>
+                    <label for="card-cvc">CVC</label>
+                    <input type="text" id="card-cvc" name="card-cvc" maxlength="3" required>
+                </div>
+            </form>
+            </div>
+            <div class="Reserva">
+                    <label for="fecha">DIA DE RESERVA:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <label for="hora">HORA DE INICIO:</label>
+                    <input type="time" id="hora_inicio" name="hora_inicio" required>
+                    <label for="hora">HORA DE FIN:</label>
+                    <input type="time" id="hora_fin" name="hora_fin" required>
+                    <label for="pago">PAGO:</label>   
+                    <button type="submit" class="reservar">Reservar</button>
+            </div> 
+            </main>
+            <div class="bocadillo-izquierda">
+                <a href="futbol.html">
+                <button type="button" class="btn btn-outline-futbol">FUTBOL</button>
+                </a>
+            </div>    
+            <div class="bocadillo-derecha">
+                <a href="baloncesto.html">
+                <button type="button" class="btn btn-outline-baloncesto">BALONCESTO</button>
+                </a>
+            </div>                       
+    </header>
+    <footer>
+        <p>© 2020 PISTAS DEPORTIVAS</p>
+        <ul>
+            <li><a href="https://protecciondatos-lopd.com/empresas/club-deportivo/">Política de privacidad</a></li>
+        </ul>    
+    </footer>
+</body>
+</html>
