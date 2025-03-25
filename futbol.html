@@ -11,14 +11,15 @@
     <section>
         <img src="./fm426.png" alt="Logo">
     </section>
-    <h2>FORMULARIO PARA FUTBOL</h2>    
-   <div class="pistas">
-      <label for="baloncesto">PISTAS</label><br>
-      <select id="baloncesto" name="baloncesto" required>
-        <option value="Seleccione el tipo de pista">Selecciones el tipo de pista</option>
-        <option value="futbol7">Futbol 7</option>
-        <option value="futbol11">Futbol 11</option>
-        <option value="futbol5">Futbol 5</option>
+    <h2>FORMULARIO PARA FUTBOL</h2>
+    <form> 
+      <div class="pistas">
+        <label for="baloncesto">PISTAS</label><br>
+        <select class="form-select" aria-label="Disable select example" required>
+         <option value="Seleccione el tipo de pista">Selecciona la pista</option>
+         <option value="futbol7">Futbol 7</option>
+         <option value="futbol11">Futbol 11</option>
+         <option value="futbol5">Futbol 5</option>
       </select> 
     </div>   
     <div class="jugadores">
@@ -26,18 +27,19 @@
         <input type="number" id="jugadores" name="jugadores" required>
     </div>
     <div class="balones">
-       <label for="balones">BALONES:</label><br>
-       <select name="balones" id="balones">
-        <option value="Seleccione el tipo de pelota">Seleccione el balón</option>
-        <option value="De cuero tradicional">De cuero tradicional</option>
-        <option value="Balones sinteticos">Sintéticos</option>
-        <option value="Futbol sala">Futbol Sala</option>
-        <option value="Balones de categorias Inferiores">Para Categorias Inferiores</option>
-        <option value="Balones de entrenamiento">Para Entrenamientos</option>
+       <label for="balones">BALONES</label><br>
+       <select class="form-select" aria-label="Disable select example" required>
+         <option value="Seleccione el tipo de pelota">Seleccione el balón</option>
+         <option value="De cuero tradicional">De cuero tradicional</option>
+         <option value="Balones sinteticos">Sintéticos</option>
+         <option value="Futbol sala">Futbol Sala</option>
+         <option value="Balones de categorias Inferiores">Para Categorias Inferiores</option>
+         <option value="Balones de entrenamiento">Para Entrenamientos</option>
        </select>
-    </div> 
-    <footer>
-        <button type="submit">Enviar</button>
-       </footer>
-    </body> 
+    </div>
+    <div>
+        <button type="submit" class="reservar">RESERVAR</button>
+    </div>
+    </form> 
+</body> 
 </html>   

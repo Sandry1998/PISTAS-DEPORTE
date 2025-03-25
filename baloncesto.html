@@ -12,10 +12,11 @@
         <img src="./pista-baloncesto-suelo-madera-luces-brillantes_605022-29152.png" alt="Logo">
     </section>    
     <h3>FORMULARIO DE BALONCESTO</h3>
+    <nav>
         <div class="pistas">
             <label for="baloncesto">CANCHAS</label><br>
-            <select id="baloncesto" name="baloncesto" required>
-             <option value="Seleccione el tipo de pista">Seleccione el tipo de cancha</option>
+            <select class="form-select" aria-label="Disable select example" required>
+             <option value="Seleccione el tipo de pista">Seleccione la cancha</option>
              <option value="canchamadera">Cancha de madera</option>
              <option value="resinaopavimentocontinuo">Cancha de pavimento continuo o resina</option>
              <option value="hormigónporoso">Cancha Hormigón Poroso</option>
@@ -27,15 +28,16 @@
         </div>
         <div class="balones">
            <label for="balones">BALONES</label><br>
-           <select name="balones" id="balones">
+           <select class="form-select" aria-label="Disable select example" required>
             <option value="Seleccione el tipo de pelota">Seleccione el balon</option>
             <option value="De entrenamiento">De entrenamiento</option>
             <option value="Competiciones juveniles">Competiciones Juveniles</option>
             <option value="Tecnologia avanzada">Tecnología Avanzada</option>
            </select>
+        </div>   
+        <div>
+            <button type="submit" class="reservar">RESERVAR</button>
         </div>
-       <footer>
-        <button type="submit">Enviar</button>
-       </footer>
+    </nav>
 </body>
 </html>

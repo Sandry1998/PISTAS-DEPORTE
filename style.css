@@ -9,7 +9,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 130vh;
+    height: 150vh;
     margin: 0;
 }
 body::before {
@@ -41,6 +41,7 @@ h1{
         font-family: Arial, sans-serif;
         font-size: 24px;
         text-align: center;
+        text-shadow: 2px 2px 4px;
     }
 
 h2{
@@ -54,6 +55,7 @@ h2{
     font-family: Arial, sans-serif;
     font-size: 24px;
     text-align: center;
+    text-shadow: 2px 2px 4px;
 }
 h3{
     display: block;
@@ -66,32 +68,88 @@ h3{
     font-family: Arial, sans-serif;
     font-size: 24px;
     text-align: center;
+    text-shadow: 2px 2px 4px;
 }
 main{
     width: 80%;
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #5e60f6;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    line-height: 1.5;
     position: relative;
+    opacity: 0.6;
     }
 footer{
     width: 80%;
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #5e60f6;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: relative;
-}   
-main,footer{
-    background-color: #ff5d5d;
     opacity: 0.6;
-  
-} 
-   
+}   
+form{
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #10a92e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+    position: relative;
+    opacity: 0.6;
+}
+nav{
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fc6713;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+    position: relative;
+    opacity: 0.6;
+}
+.contenedor{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+.contenedorA{
+    margin: 0 10PX;
+    background-color: #10a92e;
+    color: black;
+    border-radius: 15px;
+    padding: 5px ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.contenedorB{
+    margin: 0 10PX;
+    background-color: #fc6713;
+    color: black;
+    border-radius: 15px;
+    padding: 5px ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}

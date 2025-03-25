@@ -9,68 +9,68 @@
 </head>
 <body>
     <header>
-            <section>
+        <section>
                 <img src="./11.44-x-9.38m-Compact-Basketball-Half-Court-Night--1024x682.png" alt="Logo">
                 <h1>RESERVAS DE PISTAS</h1>
-            </section>
-            <main>
+        </section>
+            <div class="contenedorA">
+                <a href="futbol.html">
+                <button type="button" id="futbol">FUTBOL</button>
+                </a>
+            </div>    
+            <div class="contenedorB">
+                <a href="baloncesto.html">
+                <button type="button" id="baloncesto">BALONCESTO</button>
+                </a>
+            </div>      
+        <main>
             <div class="nombre">
-              <legend>INFORMACION PERSONAL</legend>
-              <label for="nombre">Nombre:</label>
+              <legend><strong>INFORMACION PERSONAL</strong></legend>
+              <label for="nombre">Nombre</label>
               <input type="text" id="nombre" name="nombre" required>
             </div>  
             <div class="Apellidos">
-                <label for="apellidos">Apellidos:</label>
+                <label for="apellidos">Apellidos</label>
                 <input type="text" id="apellidos" name="apellidos" required>
             </div>
             <div class="DNI">
-                <label for="dni">DNI:</label>
+                <label for="dni">DNI</label>
                 <input type="text" id="dni" name="dni" required>
             </div>
             <div class="Telefono">
-                <label for="telefono">Telefono:</label>
+                <label for="telefono">Telefono</label>
                 <input type="text" id="telefono" name="telefono" required>
             </div>
             <div class="Email">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" class="form-control" id="coldFormLabel" placeholder="example@gmail.com" required>
             </div>
             <div class="Tarjeta Credito">
-                <h4>PAGO CON TARJETA</h4>
-            <form action="#" method="post">
-                <label for="card-name">Propietario de la tarjeta</label>
-                <input type="text" id="card-name" name="card-name" required>
-                <label for="card-number">Numero de tarjeta</label>
-                <input type="text" id="card-number" name="card-number" maxlength="12" placeholder="1234 2345 5678" required>
-                <div class="card-expiration">
-                    <label for="card-expiration">Fecha de caducidad</label>
-                    <input type="text" id="card-expiration" name="card-expiration" maxlength="5" placeholder="MM/AA" required>
-                    <label for="card-cvc">CVC</label>
-                    <input type="text" id="card-cvc" name="card-cvc" maxlength="3" required>
-                </div>
-            </form>
+                <legend><strong>INFORMACION PERSONAL</strong></legend>
+                <label for="numero-de-tarjeta">NUMERO DE TARJETA</label>
+                <input type="text" id="card-number" name="card-number" maxlength="12" placeholder="1234 4567 4567" required>
+            </div>
+            <div class="card-expirar">FECHA DE EXPIRACION</div>
+            <input type="text" id="card-number" name="card-number" maxlength="5" placeholder="MM/AA" required>
+            </div>
+            <div class="cvv">
+                <label for="card-cvc">CVV</label>
+                <input type="texto" id="card-cvc" name ="card-cvc" maxlength="3" required>
             </div>
             <div class="Reserva">
-                    <label for="fecha">DIA DE RESERVA:</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                    <label for="hora">HORA DE INICIO:</label>
-                    <input type="time" id="hora_inicio" name="hora_inicio" required>
-                    <label for="hora">HORA DE FIN:</label>
-                    <input type="time" id="hora_fin" name="hora_fin" required>
-                    <label for="pago">PAGO:</label>   
-                    <button type="submit" class="reservar">Reservar</button>
-            </div> 
-            </main>
-            <div class="bocadillo-izquierda">
-                <a href="futbol.html">
-                <button type="button" class="btn btn-outline-futbol">FUTBOL</button>
-                </a>
-            </div>    
-            <div class="bocadillo-derecha">
-                <a href="baloncesto.html">
-                <button type="button" class="btn btn-outline-baloncesto">BALONCESTO</button>
-                </a>
-            </div>                       
+               <legend><strong>HORARIOS DE RESERVAS</strong></legend>
+                 <label for="hora">HORA DE INICIO</label>
+                 <input type="time" id="hora-inicio" class="hora-inicio" required>
+            </div>
+            <div class="DIA">
+                  <label for="dia">DIA DE RESERVA</label>
+                  <input type="date" id="dia-reserva" class="dia-reserva" required>
+            </div>
+            <div class="pago">
+                <label><strong for="pago">PAGO</strong></label>
+                <button type="submit" class="reservar">RESERVAR</button>
+            </div>
+        </main>                  
     </header>
     <footer>
         <p>© 2020 PISTAS DEPORTIVAS</p>
